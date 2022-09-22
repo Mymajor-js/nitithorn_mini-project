@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 99vh;
+}
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+hr{
+  width: 100%;
+  color: rgb(0, 0, 0);
+  box-shadow: 2px 1px black;
+}
+#position{
+  margin-top: -20px;
+}
+select{
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+button{
+  margin-top: 20px;
+}
+a{
+  text-decoration: none;
+}
+/* input style */
+  .information{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 450px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  
+  .information h2 {
+    margin-top:40px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .information .box {
+    position: relative;
+  }
+  
+  .information .box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .information .box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .information .box input:focus ~ label,
+  .information .box input:valid ~ label {
+    top: -30px;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+  }
+/* input style */
+
+/* Table style */
+.datatext{
+  position: absolute;
+  margin-top: 850px;
+  background-color: #494949;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+.sgt{
+  margin-left: 67%;
+  margin-top: 800px;
+  position: absolute;
+}
+.sgt input{
+  text-align: center;
+  box-shadow: 2px 2px rgb(70, 70, 70);
+  border-radius: 5px;
+}
+.backgrounds-color{
+  position: absolute;
+  margin: 10px;
+  margin-top: 1000px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  z-index: 20;
+}
+
+td,th{
+  color: #fff;
+}
+.btn-danger{
+  margin: 0;
+  align-items: center;
+  text-align: center;
+}
+.btn-danger:hover{
+  background-color: #fff;
+  border-color: #ffffff;
+  color: #000000;
+  border-radius: 100px;
+  transition: 2s ease-in-out;
+  
+}
+
+/* Table style */
+
+.wrapper{
+    position: fixed;
+    margin: 5px;
+    padding: 5px;
+    z-index: 250;
+}
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-out;
+}
+.wrapper .button:hover {
+  width: 200px;
+}
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.fa-user-tie{
+  color: rgb(128, 128, 128);
+}
+.wrapper .button:nth-child(1):hover .icon {
+  background: #0f0f0f;
+}
+.wrapper .button:nth-child(2):hover .icon {
+  background: #000000;
+}
+.wrapper .button:nth-child(3):hover .icon {
+  background: #e1306c;
+}
+.wrapper .button:nth-child(4):hover .icon {
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon {
+  background: #ff5858;
+}
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.5s ease-out;
+}
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 5px;
+  text-decoration: none;
+  
+  transition: all 1s ease-out;
+}
+.wrapper .button:nth-child(1) span {
+  color: #000000;
+  text-decoration: none;
+}
+.wrapper .button:nth-child(2) span {
+  color: #000000;
+}
+.wrapper .button:nth-child(3) span {
+  color: #e1306c;
+}
+.wrapper .button:nth-child(4) span {
+  color: #333;
+}
+.wrapper .button:nth-child(5) span {
+  color: #ff5858;
+}

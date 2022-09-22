@@ -1,0 +1,5 @@
+คำสั่งที่ใช้ run
+npm start
+npm run dev
+
+#สร้างสอง คอมมาร
